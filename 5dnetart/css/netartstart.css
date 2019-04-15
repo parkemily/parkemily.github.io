@@ -1,0 +1,104 @@
+body {
+  text-align: center;
+  background-color: #000000;
+}
+p{
+  font-family: monospace;
+  font-size: 20px;
+  color: #ffffff;
+}
+#firstb {
+  border-radius: 28px;
+  font-family: monospace;
+  color: #000000;
+  font-size: 20px;
+  background: #ffffff;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#firstb:hover {
+  background: #000000;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#secondb {
+  border-radius: 28px;
+  font-family: monospace;
+  color: #000000;
+  font-size: 20px;
+  background: #ffffff;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;    
+  display: none;
+  
+}
+
+#secondb:hover {
+  background: #000000;
+  color: #ffffff;
+  text-decoration: none;
+}
+#video {
+  margin-top: 100px;
+  border: 1px solid #ffffff;
+  border-radius: 28px;
+  width: 600px;
+  height: 450px;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+#playBox {
+  margin-top: 100px;
+  border: 1px solid #ffffff;
+  border-radius: 28px;
+  width: 600px;
+  height: 450px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000000;
+  color: white;
+  font-family: monospace;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+#playBox:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+.playText {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  }
+
+#text {
+width: 400px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .2em; /* Adjust as needed */
+  animation: 
+    blink-caret 1s step-end infinite;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: steelblue; }
+}
